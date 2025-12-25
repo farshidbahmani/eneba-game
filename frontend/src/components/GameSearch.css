@@ -1,0 +1,54 @@
+.game-search-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.results-header {
+  margin-bottom: 24px;
+}
+
+.results-header h2 {
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.loading {
+  font-size: 20px;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 40px;
+}
+
+.error {
+  color: #ef4444;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.no-results {
+  color: #9ca3af;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .game-search-container {
+    padding: 16px;
+  }
+  
+  .game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 16px;
+  }
+}
