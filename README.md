@@ -18,21 +18,23 @@ This project is a web application developed by AutoGen, utilizing a collaborativ
 - Error handling to manage API failures and provide clear feedback to users.
 
 ## Installation
-1. Clone the repository:
+   Clone the repository:
    ```bash
    git clone <repository-url>
    ```
-2. Navigate to the frontend directory:
+
+   Navigate to the backend directory:
+   ```bash
+   cd project/backend
+   npm install
+   npm run dev
+   ```
+
+   Navigate to the frontend directory:
    ```bash
    cd project/frontend
-   ```
-3. Install dependencies:
-   ```bash
    npm install
-   ```
-4. Start the application:
-   ```bash
-   npm start
+   npm run start
    ```
 
 ## Usage
