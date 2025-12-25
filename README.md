@@ -188,6 +188,8 @@ This project is a web application developed by AutoGen, utilizing a collaborativ
 
    read_file:
    ```
+   import os
+   
    def read_file(filename: str) -> str:
     """
     Reads the content of a file.
@@ -226,7 +228,11 @@ This project is a web application developed by AutoGen, utilizing a collaborativ
 ![screenshot](agents_diagram.png)
 
 ## Usage
-Provide instructions and examples on how to use the application once it is running.
+   Prompt:
+   ```
+   Create app include backend and frontend to show games list with search available. 
+   frontend design must be like attached screenshot file.
+   ```
 
 ## Contributing
 Contributions are welcome! Please read the Contributing Guide for details on the code of conduct, and the process for submitting pull requests.
