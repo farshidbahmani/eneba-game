@@ -158,6 +158,73 @@ This project is a web application developed by AutoGen, utilizing a collaborativ
    Important: Never invent features. Only document what actually exists in the code files."
    ```
 
+## Tools:
+   create_files:
+   ```
+   import os
+
+   def create_file(filename: str, content: str) -> str:
+      """
+      Creates a file with the specified content.
+      Automatically creates any missing directories in the path.
+      
+      Args:
+         filename (str): The path/name of the file (e.g., 'frontend/src/api.js').
+         content (str): The text content to write into the file.
+      """
+      try:
+         directory = os.path.dirname(filename)
+         
+         if directory and not os.path.exists(directory):
+               os.makedirs(directory, exist_ok=True)
+               
+         with open(filename, 'w', encoding='utf-8') as f:
+               f.write(content)
+               
+         return f"Successfully created file: {filename}"
+      except Exception as e:
+         return f"Error creating file: {str(e)}"
+   ```
+
+   read_file:
+   ```
+   def read_file(filename: str) -> str:
+    """
+    Reads the content of a file.
+    
+    Args:
+        filename (str): The name of the file to read.
+    """
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        return "Error: File not found."
+    except Exception as e:
+        return f"Error reading file: {str(e)}"
+   ```
+   list_files:
+   ```
+   import os
+
+   def list_files(directory: str = ".") -> str:
+      """
+      Lists all files in the specified directory to understand the project structure.
+      
+      Args:
+         directory (str): The directory to list (default is current folder '.').
+      """
+      try:
+         files = os.listdir(directory)
+         return str(files)
+      except Exception as e:
+         return f"Error listing files: {str(e)}"
+   ```
+
+## Agents diagram:
+
+![screenshot](agents_diagram.png)
+
 ## Usage
 Provide instructions and examples on how to use the application once it is running.
 
