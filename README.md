@@ -1,4 +1,6 @@
 # Project Title
+   ## Game Search Application - Backend and Frontend Developed by AutoGen
+
 
 ## Overview
 This project is a web application developed by AutoGen, utilizing a collaborative effort between three specialized agents: 
@@ -20,7 +22,7 @@ This project is a web application developed by AutoGen, utilizing a collaborativ
 ## Installation
    Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/farshidbahmani/eneba-game.git
    ```
 
    Navigate to the backend directory:

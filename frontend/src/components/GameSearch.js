@@ -11,8 +11,8 @@ const GameSearch = ({ searchQuery = '' }) => {
     try {
       setLoading(true);
       const url = query 
-        ? `http://127.0.0.1:3001/games/?title=${encodeURIComponent(query)}`
-        : 'http://127.0.0.1:3001/games/';
+        ? `http://eneba-gameapi.webhop.me/games/?title=${encodeURIComponent(query)}`
+        : 'http://eneba-gameapi.webhop.me/games/';
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch games');
       const data = await response.json();
