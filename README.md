@@ -1,6 +1,6 @@
 # Project Title
    ## Game Search Application - Backend and Frontend Developed by AutoGen
-   [http://eneba-game.servebeer.com/](http://eneba-game.servebeer.com/){:target="_blank" rel="noopener"}
+   [http://eneba-game.servebeer.com/](http://eneba-game.servebeer.com/)
 
 ## Overview
 This project is a web application developed by AutoGen, utilizing a collaborative effort between three specialized agents: 
